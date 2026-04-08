@@ -769,6 +769,163 @@ footer {
 .cookie-decline:hover { background: rgba(255,255,255,0.2); }
 
 /* ============================================================
+   SUBPAGE (services / stories)
+   ============================================================ */
+.subpage {
+  padding-top: 100px;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+}
+
+.subpage-hero {
+  background: var(--grey-100);
+  padding: 4rem 0 3rem;
+  border-bottom: 1px solid var(--grey-200);
+  margin-bottom: 4rem;
+}
+.subpage-hero .breadcrumb {
+  font-size: 0.8rem;
+  color: var(--grey-400);
+  margin-bottom: 1rem;
+}
+.subpage-hero .breadcrumb a { color: var(--red); }
+.subpage-hero .breadcrumb span { margin: 0 0.4rem; }
+.subpage-hero h1 { margin-bottom: 0.75rem; }
+.subpage-hero p {
+  font-size: 1.1rem;
+  max-width: 620px;
+  line-height: 1.75;
+}
+
+.subpage-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--red);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+.subpage-icon svg { width: 28px; height: 28px; }
+
+.content-section { margin-bottom: 3rem; }
+.content-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+.content-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  font-weight: 600;
+}
+.content-section p { margin-bottom: 0.85rem; font-size: 0.97rem; line-height: 1.75; }
+.content-section ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.content-section ul li {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.4rem 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+.content-section ul li::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--red);
+  margin-top: 0.55rem;
+  flex-shrink: 0;
+}
+
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+.tool-tag {
+  padding: 0.3rem 0.8rem;
+  background: var(--grey-100);
+  border: 1px solid var(--grey-200);
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.case-card {
+  background: var(--grey-100);
+  border: 1px solid var(--grey-200);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+.case-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 1.25rem;
+  color: var(--text);
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--red);
+  display: inline-block;
+}
+.case-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; }
+.case-col h4 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem; }
+.case-col p { font-size: 0.88rem; }
+.case-col ul { margin-bottom: 0; }
+.case-col ul li { font-size: 0.88rem; padding: 0.25rem 0; }
+
+.cta-band {
+  background: var(--navy);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+.cta-band h3 { color: var(--white); font-size: 1.4rem; }
+.cta-band p { color: rgba(255,255,255,0.65); margin-top: 0.35rem; }
+
+.subpage-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+.subpage-nav-link {
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  border: 1px solid var(--grey-200);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: all var(--transition);
+  background: var(--white);
+}
+.subpage-nav-link:hover,
+.subpage-nav-link.active {
+  background: var(--red);
+  color: var(--white);
+  border-color: var(--red);
+}
+
+@media (max-width: 768px) {
+  .case-row { grid-template-columns: 1fr; gap: 1rem; }
+  .cta-band { padding: 1.75rem; }
+}
+
+/* ============================================================
    LEGAL PAGES
    ============================================================ */
 .legal-page {
