@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    data-en="Remote Factory provides experienced Slovak engineering professionals to Swiss and German-speaking companies facing capacity or expertise gaps."
+    data-de="Remote Factory bietet erfahrene slowakische Ingenieure für Schweizer und deutschsprachige Unternehmen mit Kapazitäts- oder Kompetenzlücken." />
+  <title>Remote Factory — Engineering Resources from Slovakia</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="https://remotefactory.ch/wp-content/uploads/2024/04/rf_logo-300x128.png" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo" aria-label="Remote Factory">
+      <img src="https://remotefactory.ch/wp-content/uploads/2024/04/rf_logo-300x128.png"
+           alt="Remote Factory" />
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about"    data-en="About"    data-de="Über uns">About</a>
+      <a href="#services" data-en="Services" data-de="Leistungen">Services</a>
+      <a href="#stories"  data-en="Stories"  data-de="Referenzen">Stories</a>
+      <a href="#advisory" data-en="Advisory" data-de="Beirat">Advisory</a>
+      <a href="#contact"  data-en="Contact"  data-de="Kontakt">Contact</a>
+
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button class="lang-btn active" data-lang-btn="en" aria-pressed="true">EN</button>
+        <span class="lang-divider" aria-hidden="true">/</span>
+        <button class="lang-btn" data-lang-btn="de" aria-pressed="false">DE</button>
+      </div>
+    </nav>
+
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<nav class="nav-mobile" id="mobileNav" aria-label="Mobile navigation">
+  <a href="#about"    data-en="About"    data-de="Über uns">About</a>
+  <a href="#services" data-en="Services" data-de="Leistungen">Services</a>
+  <a href="#stories"  data-en="Stories"  data-de="Referenzen">Stories</a>
+  <a href="#advisory" data-en="Advisory" data-de="Beirat">Advisory</a>
+  <a href="#contact"  data-en="Contact"  data-de="Kontakt">Contact</a>
+  <div class="lang-switcher" style="margin-top:1rem;">
+    <button class="lang-btn active" data-lang-btn="en">EN</button>
+    <span class="lang-divider">/</span>
+    <button class="lang-btn" data-lang-btn="de">DE</button>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="home">
+  <!-- Animated Swiss cross grid background -->
+  <div class="hero-bg" aria-hidden="true">
+    <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="crossPattern" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+          <!-- Swiss cross shape -->
+          <rect x="30" y="20" width="20" height="40" fill="currentColor"/>
+          <rect x="20" y="30" width="40" height="20" fill="currentColor"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#crossPattern)" color="#D52B1E"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="section-label"
+          data-en="Remote Factory"
+          data-de="Remote Factory">Remote Factory</span>
+      </div>
+
+      <h1>
+        <span data-en="Expand your" data-de="Erweitern Sie Ihre">Expand your</span>
+        <br /><span class="hero-accent" data-en="resources." data-de="Ressourcen.">resources.</span>
+      </h1>
+
+      <p data-en="We equip Swiss and DACH-region companies with experienced engineering professionals from Slovakia — fully integrated with your team, fluent in German and English."
+         data-de="Wir versorgen Schweizer und DACH-Unternehmen mit erfahrenen Ingenieuren aus der Slowakei — vollständig in Ihr Team integriert, fließend auf Deutsch und Englisch.">
+        We equip Swiss and DACH-region companies with experienced engineering professionals from Slovakia — fully integrated with your team, fluent in German and English.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-primary">
+          <span data-en="Explore Services" data-de="Leistungen entdecken">Explore Services</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-outline"
+           data-en="Get in Touch"
+           data-de="Kontakt aufnehmen">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span data-en="Scroll" data-de="Scrollen">Scroll</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <!-- Left: story -->
+      <div class="about-text animate-on-scroll">
+        <span class="section-label" data-en="About us" data-de="Über uns">About us</span>
+        <h2 data-en="A virtual workshop for the DACH region"
+            data-de="Ein virtueller Workshop für die DACH-Region">
+          A virtual workshop for the DACH region
+        </h2>
+        <p class="lead"
+           data-en="Founded in 2022, Remote Factory bridges the gap between the DACH region's demand for engineering talent and Slovakia's pool of highly qualified specialists."
+           data-de="Remote Factory wurde 2022 gegründet und überbrückt die Lücke zwischen dem Bedarf der DACH-Region an Ingenieurtalenten und dem Pool hoch qualifizierter Fachkräfte in der Slowakei.">
+          Founded in 2022, Remote Factory bridges the gap between the DACH region's demand for engineering talent and Slovakia's pool of highly qualified specialists.
+        </p>
+        <p data-en="Every team member holds a Master's or PhD degree in mechanical engineering, electrical engineering, computer science, 3D art, or supply chain management. Our team communicates fluently in English and German — ensuring seamless integration with your workflow."
+           data-de="Jedes Teammitglied hat einen Master- oder Doktortitel in Maschinenbau, Elektrotechnik, Informatik, 3D-Art oder Supply-Chain-Management. Unser Team kommuniziert fließend auf Englisch und Deutsch — für eine nahtlose Integration in Ihren Workflow.">
+          Every team member holds a Master's or PhD degree in mechanical engineering, electrical engineering, computer science, 3D art, or supply chain management. Our team communicates fluently in English and German — ensuring seamless integration with your workflow.
+        </p>
+        <div class="about-badges">
+          <span class="badge" data-en="Founded 2022" data-de="Gegründet 2022">Founded 2022</span>
+          <span class="badge" data-en="Switzerland + Slovakia" data-de="Schweiz + Slowakei">Switzerland + Slovakia</span>
+          <span class="badge" data-en="Master's &amp; PhD Team" data-de="Master- &amp; Doktorand-Team">Master's &amp; PhD Team</span>
+          <span class="badge" data-en="DE / EN" data-de="DE / EN">DE / EN</span>
+        </div>
+      </div>
+
+      <!-- Right: value cards -->
+      <div class="value-cards animate-on-scroll delay-2">
+        <div class="value-card">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4 data-en="Expand Resources" data-de="Ressourcen erweitern">Expand Resources</h4>
+          <p data-en="Quickly scale your team with experienced specialists without lengthy recruitment cycles."
+             data-de="Erweitern Sie Ihr Team schnell mit erfahrenen Spezialisten ohne langwierige Rekrutierungszyklen.">
+            Quickly scale your team with experienced specialists without lengthy recruitment cycles.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h4 data-en="Increase Flexibility" data-de="Flexibilität erhöhen">Increase Flexibility</h4>
+          <p data-en="Scale up or down on demand. Use exactly the capacity you need, when you need it."
+             data-de="Skalieren Sie nach Bedarf. Nutzen Sie genau die Kapazität, die Sie benötigen, wenn Sie sie brauchen.">
+            Scale up or down on demand. Use exactly the capacity you need, when you need it.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h4 data-en="Extend Expertise" data-de="Know-how ausbauen">Extend Expertise</h4>
+          <p data-en="Access deep technical knowledge in engineering, 3D visualisation, and digital transformation."
+             data-de="Zugang zu fundiertem technischen Know-how in Engineering, 3D-Visualisierung und digitaler Transformation.">
+            Access deep technical knowledge in engineering, 3D visualisation, and digital transformation.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h4 data-en="Reduce Costs" data-de="Kosten senken">Reduce Costs</h4>
+          <p data-en="Benefit from competitive Slovak labour costs while maintaining Swiss-quality standards."
+             data-de="Profitieren Sie von wettbewerbsfähigen slowakischen Arbeitskosten bei gleichzeitig schweizerischen Qualitätsstandards.">
+            Benefit from competitive Slovak labour costs while maintaining Swiss-quality standards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <span class="section-label" data-en="What we offer" data-de="Unser Angebot">What we offer</span>
+      <h2 data-en="Our Services" data-de="Unsere Leistungen">Our Services</h2>
+      <p data-en="Six specialised service areas — from CAD design to full digitalisation — delivered by our remote team of engineers and specialists."
+         data-de="Sechs spezialisierte Leistungsbereiche — von CAD-Design bis zur vollständigen Digitalisierung — durch unser Remote-Team aus Ingenieuren und Fachkräften.">
+        Six specialised service areas — from CAD design to full digitalisation — delivered by our remote team of engineers and specialists.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Engineering -->
+      <div class="service-card animate-on-scroll delay-1">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        </svg>
+        <h3 data-en="Engineering Services" data-de="Engineering-Leistungen">Engineering Services</h3>
+        <p data-en="CAD design, technical documentation, reverse engineering, and product development. Full integration with your tools and workflows."
+           data-de="CAD-Design, technische Dokumentation, Reverse Engineering und Produktentwicklung. Vollständige Integration in Ihre Tools und Workflows.">
+          CAD design, technical documentation, reverse engineering, and product development. Full integration with your tools and workflows.
+        </p>
+        <span class="service-link" aria-hidden="true">
+          <span data-en="Learn more" data-de="Mehr erfahren">Learn more</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </div>
+
+      <!-- Visualisation -->
+      <div class="service-card animate-on-scroll delay-2">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <h3 data-en="Visualisation Services" data-de="Visualisierungsleistungen">Visualisation Services</h3>
+        <p data-en="Photorealistic 3D renderings, functional animations, and compelling product presentations that bring your engineering to life."
+           data-de="Fotorealistische 3D-Renderings, funktionale Animationen und überzeugende Produktpräsentationen, die Ihr Engineering zum Leben erwecken.">
+          Photorealistic 3D renderings, functional animations, and compelling product presentations that bring your engineering to life.
+        </p>
+        <span class="service-link" aria-hidden="true">
+          <span data-en="Learn more" data-de="Mehr erfahren">Learn more</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </div>
+
+      <!-- Digital Twin -->
+      <div class="service-card animate-on-scroll delay-3">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          <path d="M2 12h20"/>
+        </svg>
+        <h3 data-en="Digital Twin Application" data-de="Digital Twin Applikation">Digital Twin Application</h3>
+        <p data-en="Interactive web applications for 3D model exploration, procedure tracking, and AI-assisted maintenance support."
+           data-de="Interaktive Webanwendungen zur 3D-Modell-Erkundung, Verfahrensverfolgung und KI-gestützter Wartungsunterstützung.">
+          Interactive web applications for 3D model exploration, procedure tracking, and AI-assisted maintenance support.
+        </p>
+        <span class="service-link" aria-hidden="true">
+          <span data-en="Learn more" data-de="Mehr erfahren">Learn more</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </div>
+
+      <!-- Digitalisation -->
+      <div class="service-card animate-on-scroll delay-1">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <path d="M3 9h18M9 21V9"/>
+        </svg>
+        <h3 data-en="Digitalisation Services" data-de="Digitalisierungsleistungen">Digitalisation Services</h3>
+        <p data-en="Structured data preparation, documentation digitisation, and pipeline setup for future AI and automation utilisation."
+           data-de="Strukturierte Datenvorbereitung, Dokumentendigitalisierung und Pipeline-Aufbau für zukünftige KI- und Automatisierungsnutzung.">
+          Structured data preparation, documentation digitisation, and pipeline setup for future AI and automation utilisation.
+        </p>
+        <span class="service-link" aria-hidden="true">
+          <span data-en="Learn more" data-de="Mehr erfahren">Learn more</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </div>
+
+      <!-- Procurement -->
+      <div class="service-card animate-on-scroll delay-2">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <h3 data-en="Procurement Services" data-de="Beschaffungsleistungen">Procurement Services</h3>
+        <p data-en="Strategic procurement expertise and supply chain management (SCM) solutions to optimise your sourcing and reduce supply risk."
+           data-de="Strategische Beschaffungsexpertise und Supply-Chain-Management-Lösungen zur Optimierung Ihrer Beschaffung und Reduzierung des Lieferrisikos.">
+          Strategic procurement expertise and supply chain management (SCM) solutions to optimise your sourcing and reduce supply risk.
+        </p>
+        <span class="service-link" aria-hidden="true">
+          <span data-en="Learn more" data-de="Mehr erfahren">Learn more</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </div>
+
+      <!-- On-Demand -->
+      <div class="service-card animate-on-scroll delay-3">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="13 2 13 9 20 9"/><polygon points="22 3 2 3 2 21 22 21 22 3"/>
+          <line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/>
+          <polyline points="10 9 8 9 8 5"/>
+        </svg>
+        <h3 data-en="On-Demand Services" data-de="On-Demand-Leistungen">On-Demand Services</h3>
+        <p data-en="Customised solutions for short-term capacity or competence gaps. Flexible engagements tailored precisely to your current project needs."
+           data-de="Maßgeschneiderte Lösungen für kurzfristige Kapazitäts- oder Kompetenzlücken. Flexible Engagements, genau auf Ihre aktuellen Projektanforderungen zugeschnitten.">
+          Customised solutions for short-term capacity or competence gaps. Flexible engagements tailored precisely to your current project needs.
+        </p>
+        <span class="service-link" aria-hidden="true">
+          <span data-en="Learn more" data-de="Mehr erfahren">Learn more</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SUCCESS STORIES
+     ============================================================ -->
+<section class="stories" id="stories">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <span class="section-label" data-en="What we've built" data-de="Was wir gebaut haben">What we've built</span>
+      <h2 data-en="Success Stories" data-de="Erfolgsgeschichten">Success Stories</h2>
+      <p data-en="Selected examples from our project portfolio — demonstrating the depth and quality of our remote engineering teams."
+         data-de="Ausgewählte Beispiele aus unserem Projektportfolio — die Tiefe und Qualität unserer Remote-Engineering-Teams unter Beweis stellend.">
+        Selected examples from our project portfolio — demonstrating the depth and quality of our remote engineering teams.
+      </p>
+    </div>
+
+    <div class="stories-grid">
+
+      <div class="story-card animate-on-scroll delay-1">
+        <div class="story-illustration">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="10" y="60" width="80" height="5" stroke="currentColor" stroke-width="2"/>
+            <rect x="35" y="30" width="30" height="30" stroke="currentColor" stroke-width="2"/>
+            <circle cx="50" cy="45" r="8" stroke="currentColor" stroke-width="2"/>
+            <line x1="50" y1="30" x2="50" y2="20" stroke="currentColor" stroke-width="2"/>
+            <line x1="20" y1="65" x2="20" y2="75" stroke="currentColor" stroke-width="2"/>
+            <line x1="80" y1="65" x2="80" y2="75" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="story-body">
+          <h3 data-en="Engineering Services" data-de="Engineering-Leistungen">Engineering Services</h3>
+          <p data-en="Mechanical and 3D engine design projects — from concept to production-ready documentation."
+             data-de="Mechanische und 3D-Motorendesignprojekte — vom Konzept bis zur produktionsreifen Dokumentation.">
+            Mechanical and 3D engine design projects — from concept to production-ready documentation.
+          </p>
+        </div>
+      </div>
+
+      <div class="story-card animate-on-scroll delay-2">
+        <div class="story-illustration">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <ellipse cx="50" cy="50" rx="30" ry="20" stroke="currentColor" stroke-width="2"/>
+            <ellipse cx="50" cy="50" rx="15" ry="8" stroke="currentColor" stroke-width="2"/>
+            <line x1="20" y1="50" x2="80" y2="50" stroke="currentColor" stroke-width="2"/>
+            <path d="M30 35 Q50 20 70 35" stroke="currentColor" stroke-width="2"/>
+            <path d="M30 65 Q50 80 70 65" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="story-body">
+          <h3 data-en="Visualisation Services" data-de="Visualisierungsleistungen">Visualisation Services</h3>
+          <p data-en="3D rendering of airplane jet engine development — photorealistic animations for technical communication."
+             data-de="3D-Rendering der Entwicklung eines Flugzeugstrahltriebwerks — fotorealistische Animationen für die technische Kommunikation.">
+            3D rendering of airplane jet engine development — photorealistic animations for technical communication.
+          </p>
+        </div>
+      </div>
+
+      <div class="story-card animate-on-scroll delay-3">
+        <div class="story-illustration">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="25" y="25" width="50" height="50" rx="4" stroke="currentColor" stroke-width="2"/>
+            <rect x="35" y="35" width="30" height="30" rx="2" stroke="currentColor" stroke-width="2"/>
+            <circle cx="50" cy="50" r="8" stroke="currentColor" stroke-width="2"/>
+            <line x1="50" y1="25" x2="50" y2="15" stroke="currentColor" stroke-width="2"/>
+            <line x1="75" y1="50" x2="85" y2="50" stroke="currentColor" stroke-width="2"/>
+            <line x1="50" y1="75" x2="50" y2="85" stroke="currentColor" stroke-width="2"/>
+            <line x1="25" y1="50" x2="15" y2="50" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="story-body">
+          <h3 data-en="Digital Twin Application" data-de="Digital Twin Applikation">Digital Twin Application</h3>
+          <p data-en="Physical-to-digital modelling with cooling compressor use cases — interactive web viewer and procedure tracking."
+             data-de="Physikalisch-digitales Modellieren mit Kühlkompressor-Anwendungsfällen — interaktiver Web-Viewer und Verfahrensverfolgung.">
+            Physical-to-digital modelling with cooling compressor use cases — interactive web viewer and procedure tracking.
+          </p>
+        </div>
+      </div>
+
+      <div class="story-card animate-on-scroll delay-1">
+        <div class="story-illustration">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20 80 L20 20 L80 20 L80 80" stroke="currentColor" stroke-width="2"/>
+            <path d="M30 65 L45 45 L55 55 L70 35" stroke="currentColor" stroke-width="2"/>
+            <circle cx="30" cy="65" r="3" fill="currentColor"/>
+            <circle cx="45" cy="45" r="3" fill="currentColor"/>
+            <circle cx="55" cy="55" r="3" fill="currentColor"/>
+            <circle cx="70" cy="35" r="3" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="story-body">
+          <h3 data-en="Digitalisation Services" data-de="Digitalisierungsleistungen">Digitalisation Services</h3>
+          <p data-en="Turbojet engine wireframe renderings and technical data structuring for legacy system migration."
+             data-de="Turbojet-Triebwerk-Wireframe-Renderings und technische Datenstrukturierung für die Migration von Legacy-Systemen.">
+            Turbojet engine wireframe renderings and technical data structuring for legacy system migration.
+          </p>
+        </div>
+      </div>
+
+      <div class="story-card animate-on-scroll delay-2">
+        <div class="story-illustration">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="50" cy="50" r="25" stroke="currentColor" stroke-width="2"/>
+            <path d="M50 25 L50 50 L68 68" stroke="currentColor" stroke-width="2"/>
+            <path d="M25 50 Q50 20 75 50 Q50 80 25 50" stroke="currentColor" stroke-width="2"/>
+            <line x1="50" y1="10" x2="50" y2="20" stroke="currentColor" stroke-width="2"/>
+            <line x1="90" y1="50" x2="80" y2="50" stroke="currentColor" stroke-width="2"/>
+            <line x1="50" y1="90" x2="50" y2="80" stroke="currentColor" stroke-width="2"/>
+            <line x1="10" y1="50" x2="20" y2="50" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="story-body">
+          <h3 data-en="Procurement Services" data-de="Beschaffungsleistungen">Procurement Services</h3>
+          <p data-en="Global sourcing strategy and supply chain optimisation for a DACH-region manufacturing client."
+             data-de="Globale Sourcing-Strategie und Supply-Chain-Optimierung für einen DACH-Fertigungskunden.">
+            Global sourcing strategy and supply chain optimisation for a DACH-region manufacturing client.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PARTNERS
+     ============================================================ -->
+<section class="partners" id="partners">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <span class="section-label" data-en="Partnership" data-de="Partnerschaft">Partnership</span>
+      <h2 data-en="Our Partners" data-de="Unsere Partner">Our Partners</h2>
+      <p data-en="We collaborate with carefully selected partners to deliver comprehensive end-to-end solutions."
+         data-de="Wir arbeiten mit sorgfältig ausgewählten Partnern zusammen, um umfassende End-to-End-Lösungen bereitzustellen.">
+        We collaborate with carefully selected partners to deliver comprehensive end-to-end solutions.
+      </p>
+    </div>
+
+    <div class="partner-card animate-on-scroll">
+      <div class="partner-logo">Riwers<span>.</span></div>
+      <p data-en="Riwers is our trusted software house partner, supporting all aspects of software development — from requirements management to custom turnkey solutions. Together, we merge hardware engineering with full-stack software development for seamless product digitalisation from a single source."
+         data-de="Riwers ist unser bewährter Software-House-Partner, der alle Aspekte der Softwareentwicklung unterstützt — vom Anforderungsmanagement bis hin zu schlüsselfertigen Individuallösungen. Gemeinsam verbinden wir Hardware-Engineering mit Full-Stack-Softwareentwicklung für eine nahtlose Produktdigitalisierung aus einer Hand.">
+        Riwers is our trusted software house partner, supporting all aspects of software development — from requirements management to custom turnkey solutions. Together, we merge hardware engineering with full-stack software development for seamless product digitalisation from a single source.
+      </p>
+      <div class="partner-tags">
+        <span class="partner-tag" data-en="Solution Projects" data-de="Lösungsprojekte">Solution Projects</span>
+        <span class="partner-tag" data-en="Extended Workbench" data-de="Extended Workbench">Extended Workbench</span>
+        <span class="partner-tag" data-en="Digital Journey Compass" data-de="Digital Journey Compass">Digital Journey Compass</span>
+        <span class="partner-tag" data-en="Requirements Management" data-de="Anforderungsmanagement">Requirements Management</span>
+      </div>
+      <a href="https://www.riwers.io" target="_blank" rel="noopener noreferrer" class="partner-link">
+        <span data-en="Visit riwers.io" data-de="riwers.io besuchen">Visit riwers.io</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ADVISORY BOARD
+     ============================================================ -->
+<section class="advisory" id="advisory">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <span class="section-label" data-en="Advisory Board" data-de="Beirat">Advisory Board</span>
+      <h2 data-en="Guided by Experience" data-de="Geführt durch Erfahrung">Guided by Experience</h2>
+      <p data-en="Our advisory board brings decades of combined industry expertise across engineering, technology, and business leadership."
+         data-de="Unser Beirat bringt jahrzehntelange kombinierte Branchenexpertise in den Bereichen Engineering, Technologie und Unternehmensführung mit.">
+        Our advisory board brings decades of combined industry expertise across engineering, technology, and business leadership.
+      </p>
+    </div>
+
+    <div class="advisory-grid">
+
+      <div class="advisory-card animate-on-scroll delay-1">
+        <div class="advisory-avatar" aria-hidden="true">HW</div>
+        <div class="advisory-info">
+          <h4>Heinz Wüthrich</h4>
+          <a href="https://www.linkedin.com/in/heinz-wüthrich-b7967814/" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="advisory-card animate-on-scroll delay-2">
+        <div class="advisory-avatar" aria-hidden="true">SD</div>
+        <div class="advisory-info">
+          <h4>Stefan Dingerkus</h4>
+          <a href="https://www.linkedin.com/in/stefandingerkus/" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="advisory-card animate-on-scroll delay-3">
+        <div class="advisory-avatar" aria-hidden="true">DZ</div>
+        <div class="advisory-info">
+          <h4>Daniel Zingg</h4>
+          <a href="https://www.linkedin.com/in/daniel-zingg-294486a0/" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="advisory-card animate-on-scroll delay-4">
+        <div class="advisory-avatar" aria-hidden="true">JB</div>
+        <div class="advisory-info">
+          <h4>Jürg Braunwalder</h4>
+          <a href="https://www.linkedin.com/in/jürg-braunwalder-2a4800b/" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="advisory-card animate-on-scroll delay-5">
+        <div class="advisory-avatar" aria-hidden="true">AB</div>
+        <div class="advisory-info">
+          <h4>Dr. Adrian Beer</h4>
+          <a href="https://www.linkedin.com/in/dr-adrian-beer-46a61426/" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <span class="section-label" data-en="Get in touch" data-de="Kontakt">Get in touch</span>
+      <h2 data-en="Contact Us" data-de="Kontaktieren Sie uns">Contact Us</h2>
+      <p data-en="Two offices — one team. Reach out in German or English and we'll get back to you promptly."
+         data-de="Zwei Büros — ein Team. Schreiben Sie uns auf Deutsch oder Englisch und wir melden uns umgehend.">
+        Two offices — one team. Reach out in German or English and we'll get back to you promptly.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Switzerland -->
+      <div class="animate-on-scroll delay-1">
+        <h3>
+          <span data-en="Switzerland" data-de="Schweiz">Switzerland</span>
+        </h3>
+
+        <div class="contact-item">
+          <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div class="contact-item-text">
+            Remote Factory GmbH<br />
+            Eichholzweg 30<br />
+            3074 Muri bei Bern<br />
+            Switzerland
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.9 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.81 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 5.997 5.997l.98-.98a2 2 0 0 1 2.11-.45c.908.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div class="contact-item-text">
+            <a href="tel:+41767798292">+41 76 779 82 92</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <div class="contact-item-text">
+            <a href="mailto:adriana.polakovicova@remotefactory.ch">adriana.polakovicova@remotefactory.ch</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <div class="contact-item-text">
+            Adriana Polakovičová<br />
+            <small style="color:var(--grey-400)" data-en="General Manager &amp; Co-owner" data-de="Geschäftsführerin &amp; Mitinhaberin">General Manager &amp; Co-owner</small>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <a href="https://www.linkedin.com/company/remote-factory/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UCJyFGm_ArilW08teHBlZyqQ" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Slovakia -->
+      <div class="animate-on-scroll delay-2">
+        <h3>
+          <span data-en="Slovakia" data-de="Slowakei">Slovakia</span>
+        </h3>
+
+        <div class="contact-item">
+          <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div class="contact-item-text">
+            Remote Factory, s.r.o.<br />
+            Tranovského 47<br />
+            841 02 Bratislava<br />
+            Slovakia
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div class="contact-item-text" data-en="Technical &amp; engineering team base" data-de="Basis des technischen &amp; Engineering-Teams">Technical &amp; engineering team base</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="container footer-inner">
+    <img src="https://remotefactory.ch/wp-content/uploads/2024/04/rf_logo-300x128.png"
+         alt="Remote Factory" class="footer-logo" />
+
+    <div class="footer-links">
+      <a href="legal/privacy.html"  data-en="Privacy Policy"  data-de="Datenschutz">Privacy Policy</a>
+      <a href="legal/impressum.html" data-en="Impressum"      data-de="Impressum">Impressum</a>
+      <a href="legal/cookies.html"  data-en="Cookies"         data-de="Cookies">Cookies</a>
+      <a href="legal/terms.html"    data-en="Terms of Use"    data-de="Nutzungsbedingungen">Terms of Use</a>
+    </div>
+
+    <p class="footer-copy">
+      &copy; <span id="footerYear"></span> Remote Factory GmbH. <span data-en="All rights reserved." data-de="Alle Rechte vorbehalten.">All rights reserved.</span>
+    </p>
+  </div>
+</footer>
+
+<!-- ============================================================
+     COOKIE BANNER
+     ============================================================ -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+  <div class="cookie-text">
+    <p data-en='This website uses only essential session cookies. No tracking or analytics. See our <a href="legal/cookies.html">cookie policy</a>.'
+       data-de='Diese Website verwendet nur wesentliche Session-Cookies. Kein Tracking oder Analytics. Siehe unsere <a href="legal/cookies.html">Cookie-Richtlinie</a>.'>
+      This website uses only essential session cookies. No tracking or analytics. See our <a href="legal/cookies.html">cookie policy</a>.
+    </p>
+  </div>
+  <div class="cookie-actions">
+    <button class="cookie-accept" id="cookieAccept"
+            data-en="Accept" data-de="Akzeptieren">Accept</button>
+    <button class="cookie-decline" id="cookieDecline"
+            data-en="Decline" data-de="Ablehnen">Decline</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
