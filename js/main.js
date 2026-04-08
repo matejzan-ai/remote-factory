@@ -163,6 +163,153 @@
   });
 
   /* -------------------------------------------------------
+     HERO CANVAS — animated engineering mesh
+     ------------------------------------------------------- */
+  (function () {
+    const canvas = document.getElementById('heroCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let W, H, nodes, rafId;
+
+    function resize() {
+      const dpr = window.devicePixelRatio || 1;
+      W = canvas.parentElement.offsetWidth;
+      H = canvas.parentElement.offsetHeight;
+      canvas.width  = W * dpr;
+      canvas.height = H * dpr;
+      canvas.style.width  = W + 'px';
+      canvas.style.height = H + 'px';
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.scale(dpr, dpr);
+      buildNodes();
+    }
+
+    function buildNodes() {
+      const count = Math.min(90, Math.max(50, Math.floor(W * H / 14000)));
+      nodes = Array.from({ length: count }, () => ({
+        x:     Math.random() * W,
+        y:     Math.random() * H,
+        vx:    (Math.random() - 0.5) * 0.26,
+        vy:    (Math.random() - 0.5) * 0.26,
+        big:   Math.random() > 0.82,
+        red:   Math.random() > 0.91,
+        phase: Math.random() * Math.PI * 2,
+      }));
+    }
+
+    function frame() {
+      ctx.clearRect(0, 0, W, H);
+
+      /* — dot grid — */
+      ctx.fillStyle = 'rgba(255,255,255,0.045)';
+      const GRID = 44;
+      for (let gx = GRID / 2; gx < W; gx += GRID)
+        for (let gy = GRID / 2; gy < H; gy += GRID) {
+          ctx.beginPath();
+          ctx.arc(gx, gy, 1, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+      /* — connections — */
+      const MAX = 145;
+      for (let i = 0; i < nodes.length; i++) {
+        const a = nodes[i];
+        for (let j = i + 1; j < nodes.length; j++) {
+          const b = nodes[j];
+          const dx = a.x - b.x, dy = a.y - b.y;
+          const d  = Math.sqrt(dx * dx + dy * dy);
+          if (d < MAX) {
+            const alpha = (1 - d / MAX) * (a.red || b.red ? 0.28 : 0.13);
+            ctx.strokeStyle = a.red || b.red
+              ? `rgba(213,43,30,${alpha.toFixed(3)})`
+              : `rgba(255,255,255,${alpha.toFixed(3)})`;
+            ctx.lineWidth = 0.65;
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.stroke();
+          }
+        }
+      }
+
+      /* — nodes — */
+      nodes.forEach(n => {
+        n.phase += 0.019;
+        const p   = 0.5 + 0.5 * Math.sin(n.phase);
+        const r   = n.big ? 2.6 : 1.4;
+
+        if (n.red) {
+          /* outer pulse ring */
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, r + 7 * p, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(213,43,30,${(0.08 * p).toFixed(3)})`;
+          ctx.fill();
+          /* core */
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(213,43,30,${(0.55 + 0.3 * p).toFixed(3)})`;
+          ctx.fill();
+          /* cross arms */
+          const arm = 7 + 2 * p;
+          ctx.strokeStyle = `rgba(213,43,30,${(0.28 + 0.18 * p).toFixed(3)})`;
+          ctx.lineWidth = 0.8;
+          ctx.beginPath();
+          ctx.moveTo(n.x - arm, n.y); ctx.lineTo(n.x + arm, n.y);
+          ctx.moveTo(n.x, n.y - arm); ctx.lineTo(n.x, n.y + arm);
+          ctx.stroke();
+        } else if (n.big) {
+          /* larger white node + cross */
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(255,255,255,${(0.32 + 0.14 * p).toFixed(3)})`;
+          ctx.fill();
+          const arm = 5;
+          ctx.strokeStyle = `rgba(255,255,255,${(0.12 + 0.08 * p).toFixed(3)})`;
+          ctx.lineWidth = 0.6;
+          ctx.beginPath();
+          ctx.moveTo(n.x - arm, n.y); ctx.lineTo(n.x + arm, n.y);
+          ctx.moveTo(n.x, n.y - arm); ctx.lineTo(n.x, n.y + arm);
+          ctx.stroke();
+        } else {
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(255,255,255,${(0.2 + 0.1 * p).toFixed(3)})`;
+          ctx.fill();
+        }
+
+        n.x += n.vx; n.y += n.vy;
+        if (n.x < 0 || n.x > W) n.vx = -n.vx;
+        if (n.y < 0 || n.y > H) n.vy = -n.vy;
+      });
+
+      rafId = requestAnimationFrame(frame);
+    }
+
+    resize();
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(resize, 160);
+    }, { passive: true });
+
+    /* pause when hero scrolls off-screen */
+    const heroEl = document.querySelector('.hero');
+    if (heroEl && 'IntersectionObserver' in window) {
+      new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) {
+          if (!rafId) rafId = requestAnimationFrame(frame);
+        } else {
+          cancelAnimationFrame(rafId);
+          rafId = null;
+        }
+      }).observe(heroEl);
+    }
+
+    frame();
+  }());
+
+  /* -------------------------------------------------------
      FOOTER YEAR
      ------------------------------------------------------- */
   const yearEl = document.getElementById('footerYear');
